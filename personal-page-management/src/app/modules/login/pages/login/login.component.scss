@@ -1,0 +1,28 @@
+.container-login {
+  height: 100vh;
+  width: 100vw;
+  //background-image: url('../src/assets/rick-and-morty.jpg');
+  @media(max-width: 700px) {
+    .hide-image {
+      display: none;
+    }
+  }
+  //.contenedor{
+  //  height: 100%;
+  //}
+  .form-login-center {
+    background-color: #e8eeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagen {
+    background-image: url('/assets/rick-and-morty.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+  }
+}
+

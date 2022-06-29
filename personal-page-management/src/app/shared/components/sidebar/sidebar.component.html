@@ -1,0 +1,50 @@
+<div class="container">
+  <section class="container-logo">
+    <img src="assets/playwright.svg"
+         alt="logo"
+         class="logo">
+    <h4 class="logo-name">
+      Pagina personal
+    </h4>
+  </section>
+  <section class="avatar">
+    <img src="https://i.stack.imgur.com/GNhxO.png"
+         alt="Avatar"
+         class="avatar-picture">
+    <section class="item-name">
+      <h5>Kevin Jimenez</h5>
+      <h6 class="text-muted">Administrador</h6>
+    </section>
+  </section>
+  <div class="container-option">
+    <div class="option-item">
+      <fa-icon [icon]="faCoffee"
+               [size]="'lg'">
+      </fa-icon>
+      <h6>My profile</h6>
+    </div>
+  </div>
+
+  <hr>
+
+  <h4>Pages</h4>
+
+  <ul class="list-group">
+    <li [routerLink]="['/home']"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}"
+        class="list-group-item">
+      Home
+    </li>
+    <li [routerLink]="['/home', 'user']"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}"
+        class="list-group-item">
+      User
+    </li>
+  </ul>
+
+  <div class="logout">
+    <h4 class="item">salir</h4>
+  </div>
+</div>

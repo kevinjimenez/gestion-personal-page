@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="logo">Log in</div>
+  <div class="login-item">
+    <form class="form form-login"
+          [formGroup]="formLogin"
+          (ngSubmit)="save()">
+      <div class="form-field">
+        <label class="user"
+               for="login-username">
+          <span class="hidden">
+            Username
+          </span>
+        </label>
+        <input id="login-username"
+               class="form-input"
+               placeholder="Username"
+               type="text"
+               formControlName="user">
+      </div>
+
+      <div class="form-field">
+        <label class="lock"
+               for="login-password">
+          <span class="hidden">
+            Password
+          </span>
+        </label>
+        <input id="login-password"
+               class="form-input"
+               placeholder="Password"
+               type="password"
+               formControlName="password">
+      </div>
+      <div class="form-field">
+        <input type="submit" value="Log in">
+      </div>
+    </form>
+  </div>
+</div>
